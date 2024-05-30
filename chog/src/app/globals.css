@@ -24,16 +24,22 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+a {
   font-family: "Poetsen One", sans-serif;
   color: white;
+}
+
+a:hover {
+  color: #836ef9;
 }
 
 h2 {
   color: rgb(221, 221, 221);
 }
 
-p {
+p,
+li {
   font-family: "Comfortaa", sans-serif;
   color: rgb(179, 179, 179);
 }
