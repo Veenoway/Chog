@@ -8,7 +8,7 @@ jobs:
     name: Build and Push to GCP
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: chog-front
+      IMAGE_NAME: front-end
       PROJECT_ID: chog-426009
     steps:
       - name: Checkout
