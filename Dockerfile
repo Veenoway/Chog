@@ -5,7 +5,7 @@ WORKDIR /app
 ARG DOCKER_TAG
 ENV APP_VERSION=$DOCKER_TAG
 
-RUN npm install
+RUN npm install --quiet node-gyp -g
 
 COPY package.json .
 
