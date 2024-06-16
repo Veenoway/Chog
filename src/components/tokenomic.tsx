@@ -24,7 +24,7 @@ export const Tokenomic = ({
   }, [isInView]);
 
   return (
-    <div className="flex flex-col items-center mx-5">
+    <div className="flex flex-col items-center mx-2.5 md:mx-5 ">
       {/* <Reveal delay={config[0]}> */}
       <Button title={title} />
       {/* </Reveal> */}

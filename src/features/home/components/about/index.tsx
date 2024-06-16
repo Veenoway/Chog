@@ -78,7 +78,7 @@ export const About = () => {
               <div
                 className={`${
                   isHover ? "opacity-100 scale-100" : "opacity-0 scale-95"
-                } transition-all -top-[20px] md:-top-[10px] duration-300 ease-in-out absolute pointer-events-none  py-1 left-1/2 shadow-2xl -translate-x-1/2 px-2.5 bg-purple-light border-2 border-purple-lighter rounded-lg`}
+                } transition-all -top-[20px] lg:-top-[10px] duration-300 ease-in-out absolute pointer-events-none  py-1 left-1/2 shadow-2xl -translate-x-1/2 px-2.5 bg-purple-light border-2 border-purple-lighter rounded-lg`}
               >
                 <h5 className="text-[13px] sm:text-sm md:text-base">
                   0x000000000000000000000000000000000

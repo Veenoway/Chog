@@ -96,7 +96,11 @@ export const Home = () => {
               className="w-[85vw] md:w-[85vw] max-w-[1600px] min-w-[280px]"
               src="/layers/social-layer-chog.png"
             />
-            <Link href={""}>
+            <Link
+              href="https://t.me/chog_launch_portal"
+              target="_blank"
+              rel="noreferer noopener"
+            >
               <motion.img
                 src="/layers/social-telegram.png"
                 initial={{ y: 0 }}
@@ -110,13 +114,15 @@ export const Home = () => {
                 style={{
                   position: "absolute",
                   top: "0px",
+                  background: "#FF0000",
                 }}
               />
             </Link>
             <Link
-              rel="noreferer noopener"
               href="https://x.com/chog_base"
               target="_blank"
+              rel="noreferer noopener"
+              className="w-[50%] max-w-[100px]"
             >
               <motion.img
                 src="/layers/social-twitter.png"
@@ -133,6 +139,7 @@ export const Home = () => {
                   position: "absolute",
                   top: "0px",
                   right: "10px",
+                  background: "#FF00FF",
                 }}
               />
             </Link>
