@@ -78,7 +78,7 @@ export const Roadmap = () => {
             </Reveal>
           </div>
           <motion.img
-            ref={ref}
+            //ref={ref}
             variants={{
               hidden: { opacity: 0 },
               visible: { opacity: 1 },
