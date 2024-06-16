@@ -59,36 +59,36 @@ export const Home = () => {
     <main className="flex flex-col justify-center items-center">
       <section className="flex flex-col max-w-6xl w-[95%] py-[50px] mx-auto">
         <img
-          className="w-[300px] sm:w-[400px] mx-auto mb-[60px] sm:mb-[80px]"
+          className="w-[300px] md:w-[400px] mx-auto mb-[20px] sm:mb-[80px]"
           height="500"
           width="500"
           src="/layers/title.PNG"
           alt="Chog title"
         />
-        <div className="flex sm:flex-row flex-col justify-between items-center w-full relatif">
+        <div className="flex md:flex-row flex-col justify-between items-center w-full relatif">
           <div className="flex flex-col max-w-[95%] sm:max-w-[60%]">
-            <span className=" hidden sm:inline-flex items-center h-[40px] lg:h-[50px] w-[180px] lg:w-[230px] bg-gradient-to-r from-purple-tint to-purple-dark">
+            <span className=" hidden md:inline-flex items-center h-[40px] lg:h-[50px] w-[180px] lg:w-[230px] bg-gradient-to-r from-purple-tint to-purple-dark">
               <h3 className="ml-3 text-xl lg:text-3xl text-nowrap uppercase text-purple-light">
                 About $CHOG
               </h3>
             </span>
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl mt-2.5 lg:mt-5 font-bold text-center sm:text-start hidden sm:flex">
+            <h1 className="text-5xl md:text-6xl lg:text-8xl mt-2.5 lg:mt-5 font-bold text-center md:text-start hidden md:flex">
               CHOG COIN
             </h1>
-            <h2 className="mt-2.5 lg:mt-5 text-4xl sm:text-3xl lg:text-5xl uppercase font-normal text-center sm:text-start">
+            <h2 className="mt-2.5 lg:mt-5 text-4xl md:text-3xl lg:text-5xl uppercase font-normal text-center md:text-start">
               The Moyaki's killer
             </h2>
-            <p className="mt-2.5 hidden sm:flex lg:mt-5 sm:text-base lg:text-xl max-w-[80%] text-center sm:text-start mx-auto sm:mx-0">
+            <p className="mt-2.5 hidden md:flex lg:mt-5 sm:text-base lg:text-xl max-w-[80%] text-center sm:text-start mx-auto sm:mx-0">
               Chog is a community-driven, fair launched DeFi Token. It's time to
               take back control and redefine roles. The community is taking
               matters into their own hands.
             </p>
-            <button className="flex mb-10 sm:mb-0 mt-5 lg:mt-8 justify-center items-center bg-purple-light py-1.5 sm:py-2 px-3 sm:px-5 border-purple-lighter border-2 rounded-full w-fit  mx-auto sm:mx-0">
+            <button className="flex mb-10 md:mb-0 mt-5 lg:mt-8 justify-center items-center bg-purple-light py-1.5 md:py-2 px-3 md:px-5 border-purple-lighter border-2 rounded-full w-fit  mx-auto md:mx-0">
               <h4 className="sm:text-base lg:text-xl text-white">Buy now!</h4>
             </button>
           </div>
           <img
-            className="w-auto h-[350px] md:w-[500px] md:h-[500px] lg:w-[550px] lg:h-[550px]"
+            className="w-auto h-[350px] md:w-auto md:h-[400px] lg:w-[550px] lg:h-[550px]"
             height="550"
             width="550"
             src="/layers/chog-wealthy.png"
@@ -96,7 +96,7 @@ export const Home = () => {
           />
         </div>
       </section>
-      <section className="w-full flex flex-col items-center relative mt-[30px] sm:mt-[100px] mb-[100px] lg:mb-[200px]">
+      <section className="w-full flex flex-col items-center relative mt-[30px] md:mt-[100px] mb-[100px] lg:mb-[200px]">
         <div className="flex justify-between items-center">
           <div className="triangle-left" />
           <div className="triangle-right" />
@@ -126,7 +126,7 @@ export const Home = () => {
                 <h3 className="text-2xl lg:text-3xl mb-2.5 lg:mb-5 uppercase text-white">
                   {roadmap.title}
                 </h3>
-                <ul className="text-white sm:text-sm lg:text-lg z-10" ref={ref}>
+                <ul className="text-white sm:text-sm lg:text-lg z-10">
                   {roadmap.content.map((content, i) => (
                     <Li key={i} title={content} />
                   ))}
@@ -197,7 +197,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="w-screen h-fit relative max-h-[1000px] mt-[50px] lg:mt-[100px] flex flex-col items-center">
+      <section className="w-screen h-fit relative max-h-[1000px] mt-5 sm:mt-[50px] lg:mt-[100px] flex flex-col items-center">
         <Reveal delay={0.25}>
           <h1 className="text-5xl sm:text-6xl lg:text-8xl mt-2.5 lg:mt-5 w-fit mb-[50px] font-bold mx-auto">
             JOIN US NOW!
