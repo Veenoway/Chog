@@ -1,16 +1,6 @@
+import { SlideProps } from "@/features/home/models";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { ReactNode, useEffect, useRef } from "react";
-
-type SlideProps = {
-  children: ReactNode;
-  className?: string;
-  config?: {
-    delay?: number;
-    duration?: number;
-    to?: number;
-    from?: number;
-  };
-};
+import { useEffect, useRef } from "react";
 
 const defaultConfig = {
   delay: 0.2,

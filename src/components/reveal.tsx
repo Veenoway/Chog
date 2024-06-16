@@ -1,14 +1,6 @@
+import { RevealProps } from "@/features/home/models";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
-
-interface RevealProps {
-  children: React.ReactNode;
-  width?: string;
-  className?: string;
-  delay?: number;
-  from?: number;
-  to?: number;
-}
 
 export const Reveal = ({
   children,

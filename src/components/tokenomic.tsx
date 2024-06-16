@@ -1,18 +1,13 @@
+import { TaxProps } from "@/features/home/models";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { Button } from "./button";
-
-interface TokenomicProps {
-  title: string;
-  value: string;
-  config?: [number, number];
-}
 
 export const Tokenomic = ({
   title,
   value,
   config = [0.25, 0.35],
-}: TokenomicProps) => {
+}: TaxProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();

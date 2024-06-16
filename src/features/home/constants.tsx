@@ -1,3 +1,5 @@
+import { TokenomicProps } from "./models";
+
 export const tokenomics: TokenomicProps[] = [
   {
     title: "93% of Supply to LP",
