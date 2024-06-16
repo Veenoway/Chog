@@ -72,10 +72,10 @@ export const SupplyBreakdown = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="h-[300px] sm:h-[3200px] lg:h-[480px] w-[340px] sm:w-[360px] md:ml-0 lg:w-[540px] md:absolute md:right-0 bottom-0 sm:bottom-[30px] md:-bottom-[70px]"
+              className="h-[260px] my-[40px] md:my-0 sm:h-[260px] lg:h-[350px] w-[260px] sm:w-[260px] md:ml-0 lg:w-[350px]"
               height="500"
               width="500"
-              src="/layers/tokenomic-2.png"
+              src="/layers/tokenomic.png"
             />
           </div>
         </div>

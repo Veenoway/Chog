@@ -21,7 +21,7 @@ export const Home = () => {
     }
   }, [isInView]);
   return (
-    <main className="flex flex-col justify-center items-center">
+    <main className="flex flex-col justify-center items-center  overflow-hidden">
       <section className="flex flex-col max-w-6xl w-[95%] py-[50px] mx-auto">
         <div className="flex w-full justify-center">
           <Reveal delay={0.1}>
@@ -84,14 +84,14 @@ export const Home = () => {
       <SupplyBreakdown />
       <Roadmap />
 
-      <section className="w-screen h-fit relative max-h-[1000px] mt-5 sm:mt-[50px]  flex flex-col items-center">
-        <Reveal delay={0.25}>
+      <section className="w-full sm:w-screen h-fit relative max-h-[1000px] mt-5 sm:mt-[50px]  flex flex-col items-center">
+        <Reveal delay={0.25} className="w-fit">
           <h1 className="text-5xl sm:text-6xl lg:text-8xl mt-2.5 lg:mt-5 w-fit mb-[50px] font-bold mx-auto text-cream">
             JOIN US NOW!
           </h1>
-          <div className="relative w-fit h-fit">
+          <div className="relative w-fit h-fit overflow-hidden">
             <img
-              className="w-[85vw] md:w-[85vw] max-w-[1600px] min-w-[450px]"
+              className="w-[85vw] md:w-[85vw] max-w-[1600px] min-w-[280px]"
               src="/layers/social-layer-chog.png"
             />
             <Link href={""}>
