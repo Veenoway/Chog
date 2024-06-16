@@ -59,7 +59,8 @@ export const Home = () => {
                 Chog is a meme who emerged from Monad Network, after months of
                 observing retail trying to get out of the rat race with
                 grandma's Christmas check, he is coming on Base to blow
-                everything up.
+                everything up. Leave cats and dogs for jeets, and ape in $CHOG
+                for them gucci sandals.
               </p>
             </Slide>
             <Slide config={{ delay: 0.6 }}>
