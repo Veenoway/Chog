@@ -21,7 +21,7 @@ export const SupplyBreakdown = () => {
       </div>
       <div className="flex w-full bg-purple-tint">
         <div className="flex w-full justify-center">
-          <div className="flex  justify-between items-center relative max-w-5xl w-full p-7 lg:p-[40px]">
+          <div className="flex flex-col md:flex-row justify-between items-center relative max-w-5xl w-full p-7 pb-0 sm:pb-7 lg:p-[40px]">
             <div className="flex flex-col mr-[5%]">
               <Reveal delay={0.4}>
                 <h1 className="text-xl sm:text-3xl lg:text-5xl font-bold uppercase text-cream">
@@ -72,7 +72,7 @@ export const SupplyBreakdown = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="h-[200px] sm:h-[260px] lg:h-[480px] w-[200px] sm:w-[260px] lg:w-[540px] absolute right-0 -bottom-[70px]"
+              className="h-[300px] sm:h-[3200px] lg:h-[480px] w-[340px] sm:w-[360px] md:ml-0 lg:w-[540px] md:absolute md:right-0 bottom-0 sm:bottom-[30px] md:-bottom-[70px]"
               height="500"
               width="500"
               src="/layers/tokenomic-2.png"

@@ -27,7 +27,7 @@ export const About = () => {
     }
   }, [isInView]);
   return (
-    <section className="my-[100px]  md:mb-[200px]  flex items-center flex-col w-[95%]">
+    <section className="mb-[100px]  md:mb-[200px] flex items-center flex-col w-[95%]">
       <motion.div
         ref={ref}
         className="relative w-fit max-w-[700px]"
@@ -47,7 +47,7 @@ export const About = () => {
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
       >
-        <div className="flex z-10 p-7 lg:p-10 relative flex-col rounded items-center h-full bg-purple-tint">
+        <div className="flex z-10 p-7 lg:p-10 relative flex-col rounded items-center h-full bg-purple-tint border-2 md:border-none border-purple-light">
           <motion.div
             className="flex flex-col items-center justify-center"
             variants={{
@@ -102,7 +102,7 @@ export const About = () => {
           </motion.div>
         </div>
 
-        <div className="absolute z-0 -top-3 -right-3 lg:-top-5 lg:-right-5 w-full h-full bg-purple-light lighter rounded" />
+        <div className="absolute z-0 -top-3 -right-3 lg:-top-5 lg:-right-5 w-full h-full bg-purple-light lighter rounded hidden md:flex" />
       </motion.div>
     </section>
   );

@@ -8,7 +8,7 @@ import { roadmaps } from "../../constants";
 export const Roadmap = () => {
   const [activeRoadmapIndex, setActiveRoadmapIndex] = useState(0);
   const roadmap = roadmaps[activeRoadmapIndex];
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLImageElement>(null);
   const mainControls = useAnimation();
   const isInView = useInView(ref, { once: true });
 
@@ -20,7 +20,10 @@ export const Roadmap = () => {
   return (
     <section className="flex w-[95%] flex-col justify-center items-center relative my-[100px] lg:mb-[200px] ">
       <Reveal delay={0.25}>
-        <h1 className="text-5xl sm:text-6xl lg:text-8xl mt-5 font-bold uppercase mb-[40px] lg:mb-[80px]">
+        <h1
+          className="text-5xl sm:text-6xl lg:text-8xl mt-5 font-bold uppercase mb-[40px] lg:mb-[80px] text-cream"
+          ref={ref}
+        >
           Roadmap
         </h1>
       </Reveal>
@@ -61,14 +64,7 @@ export const Roadmap = () => {
                   Phase{" "}
                   {activeRoadmapIndex + 2 < 4 ? activeRoadmapIndex + 2 : 1}
                 </motion.button>
-                <motion.img
-                  variants={{
-                    hidden: { opacity: 0, x: 50 },
-                    visible: { opacity: 1, x: 0 },
-                  }}
-                  initial="hidden"
-                  animate={mainControls}
-                  transition={{ duration: 0.5, delay: 0.8 }}
+                <img
                   className="flex lg:hidden sm:opacity-100 opacity-40 h-[300px] pointer-events-none absolute right-0 -bottom-4"
                   height="500"
                   width="500"
@@ -78,12 +74,11 @@ export const Roadmap = () => {
             </Reveal>
           </div>
           <motion.img
-            ref={ref}
             variants={{
-              hidden: { opacity: 0 },
-              visible: { opacity: 1 },
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
             }}
-            initial="visible"
+            initial="hidden"
             animate={mainControls}
             transition={{ duration: 0.5, delay: 0.8 }}
             className="hidden lg:flex h-[600px] w-full pointer-events-none absolute -top-1/3"

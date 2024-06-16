@@ -91,7 +91,7 @@ export const Home = () => {
           </h1>
           <div className="relative w-fit h-fit">
             <img
-              className="w-[85vw] md:w-[85vw] max-w-[1600px]"
+              className="w-[85vw] md:w-[85vw] max-w-[1600px] min-w-[450px]"
               src="/layers/social-layer-chog.png"
             />
             <Link href={""}>
