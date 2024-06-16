@@ -226,7 +226,7 @@ export const Home = () => {
             </Link>
             <Link href={""}>
               <motion.img
-                src="/layers/social-twitter.PNG"
+                src="/layers/social-twitter.png"
                 initial={{ y: 0 }}
                 animate={{ y: [0, -20, 0] }}
                 transition={{
