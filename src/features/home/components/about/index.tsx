@@ -75,7 +75,6 @@ export const About = () => {
               Stablecoin liquidity to be ETH wreck-proof. The long anticipation
               is coming to an end, and a new era of community leadership begins.
             </p>
-
             <motion.button
               initial="hidden"
               animate={mainControls}
@@ -102,6 +101,7 @@ export const About = () => {
             </motion.button>
           </motion.div>
         </div>
+
         <div className="absolute z-0 -top-3 -right-3 lg:-top-5 lg:-right-5 w-full h-full bg-purple-light rounded" />
       </motion.div>
     </section>

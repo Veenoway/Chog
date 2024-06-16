@@ -14,7 +14,7 @@ export const SupplyBreakdown = () => {
     }
   }, [isInView]);
   return (
-    <section className="flex flex-col items-center relative w-full sm:mb-[50px] lg:mb-[100px]">
+    <section className="flex flex-col items-center relative w-full mb-[50px] lg:mb-[100px]">
       <div className="flex justify-between items-center">
         <div className="triangle-left" />
         <div className="triangle-right" />

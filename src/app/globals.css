@@ -18,6 +18,10 @@
 
 body {
   background-color: #200052;
+  /* background-image: url("/backgrounds/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; */
 }
 
 h1,
