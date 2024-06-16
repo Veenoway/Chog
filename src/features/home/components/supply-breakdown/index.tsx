@@ -21,15 +21,15 @@ export const SupplyBreakdown = () => {
       </div>
       <div className="flex w-full bg-purple-tint">
         <div className="flex w-full justify-center">
-          <div className="flex  justify-between items-center max-w-5xl w-full sm:p-7 lg:p-[40px]">
+          <div className="flex  justify-between items-center max-w-5xl w-full p-7 lg:p-[40px]">
             <div className="flex flex-col mr-[5%]">
               <Reveal delay={0.4}>
-                <h1 className="sm:text-3xl lg:text-5xl font-bold uppercase">
+                <h1 className="text-xl sm:text-3xl lg:text-5xl font-bold uppercase">
                   Supply Breakdown
                 </h1>
               </Reveal>
               <Reveal delay={0.5}>
-                <h2 className="sm:text-xl lg:text-3xl sm:mt-1.5 lg:mt-2.5 font-bold uppercase">
+                <h2 className="text-lg sm:text-xl lg:text-3xl mt-0.5 sm:mt-1.5 lg:mt-2.5 font-bold uppercase">
                   Total Supply 10M
                 </h2>
               </Reveal>
@@ -47,16 +47,16 @@ export const SupplyBreakdown = () => {
                       width: "30%",
                     },
                   }}
-                  className=" sm:h-0.5 lg:h-[5px] bg-purple-light sm:my-3 lg:my-5 rounded-full"
+                  className="h-0.5 lg:h-[5px] bg-purple-light my-3 lg:my-5 rounded-full"
                 />
                 <div />
                 {tokenomics.map((item, i) => (
-                  <div key={i} className="flex flex-col sm:mt-2 lg:mt-4">
+                  <div key={i} className="flex flex-col mt-2 lg:mt-4">
                     <div className="flex items-center mb-1">
                       <div
-                        className={`sm:h-[12px] sm:w-[12px] lg:h-[15px] lg:w-[15px] ${item.bg} rounded rotate-45 mr-3`}
+                        className={`h-[12px] w-[12px] lg:h-[15px] lg:w-[15px] ${item.bg} rounded rotate-45 mr-3`}
                       />
-                      <h2 className="sm:text-base lg:text-xl uppercase">
+                      <h2 className="text-base lg:text-xl uppercase">
                         {item.title}
                       </h2>
                     </div>
@@ -72,7 +72,7 @@ export const SupplyBreakdown = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="sm:h-[260px] lg:h-[320px] sm:w-[260px] lg:w-[320px]"
+              className="h-[200px] sm:h-[260px] lg:h-[320px] w-[200px] sm:w-[260px] lg:w-[320px]"
               height="500"
               width="500"
               src="/layers/tokenomic.png"

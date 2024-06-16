@@ -27,7 +27,7 @@ export const About = () => {
     }
   }, [isInView]);
   return (
-    <section className="sm:mb-[175px] lg:mb-[250px] flex items-center flex-col w-[95%]">
+    <section className="mb-[100px] md:mb-[250px] flex items-center flex-col w-[95%]">
       <motion.div
         ref={ref}
         className="relative w-fit max-w-[700px]"
@@ -47,7 +47,7 @@ export const About = () => {
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
       >
-        <div className="flex z-10 sm:p-7 lg:p-10 relative flex-col rounded items-center h-full bg-purple-tint">
+        <div className="flex z-10 p-7 lg:p-10 relative flex-col rounded items-center h-full bg-purple-tint">
           <motion.div
             className="flex flex-col items-center justify-center"
             variants={{
@@ -62,11 +62,11 @@ export const About = () => {
             initial="hidden"
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <h2 className="sm:text-3xl lg:text-5xl uppercase text-white">
+            <h2 className="text-3xl lg:text-5xl uppercase text-white">
               About $CHOG
             </h2>
-            <div className="sm:w-[70px] lg:w-[100px] h-[5px] bg-purple-light sm:mt-3 lg:mt-5 rounded-full" />
-            <p className="sm:text-base lg:text-xl text-center sm:mt-6 lg:mt-10 mx-auto w-[94%]">
+            <div className="w-[70px] lg:w-[100px] h-[5px] bg-purple-light mt-3 lg:mt-5 rounded-full" />
+            <p className="text-base lg:text-xl text-center mt-6 lg:mt-10 mx-auto w-[94%]">
               Chog emerged in the Monad Discord, created by one of the original
               members, RayJ. The stories surrounding Chog will be explored in X
               spaces, marking a turning point for Chog. It's time to take back
@@ -102,7 +102,7 @@ export const About = () => {
             </motion.button>
           </motion.div>
         </div>
-        <div className="absolute z-0 sm:-top-3 sm:-right-3 lg:-top-5 lg:-right-5 w-full h-full bg-purple-light rounded" />
+        <div className="absolute z-0 -top-3 -right-3 lg:-top-5 lg:-right-5 w-full h-full bg-purple-light rounded" />
       </motion.div>
     </section>
   );

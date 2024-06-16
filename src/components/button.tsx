@@ -11,7 +11,7 @@ export const Button = ({ title, className, ...props }: ButtonProps) => {
   return (
     <motion.button
       className={cn(
-        "flex justify-center items-center bg-purple-light sm:py-1 sm:px-3 lg:py-2 lg:px-5 border-purple-lighter border-2 rounded-full",
+        "flex justify-center items-center bg-purple-light py-1 px-3 lg:py-2 lg:px-5 border-purple-lighter border-2 rounded-full",
         className
       )}
       {...props}

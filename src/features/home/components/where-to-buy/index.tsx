@@ -23,8 +23,8 @@ export const WhereToBuy = () => {
   ];
 
   return (
-    <section className="flex justify-center flex-col items-center w-[95%] max-w-6xl pb-[200px]">
-      <div className="w-full flex justify-between items-center">
+    <section className="flex justify-center flex-col items-center w-[95%] max-w-6xl pb-[100px] md:pb-[200px]">
+      <div className="w-full flex md:flex-row flex-col justify-between items-center">
         <motion.img
           variants={{
             hidden: { opacity: 0, x: -100 },
@@ -33,14 +33,14 @@ export const WhereToBuy = () => {
           initial="hidden"
           animate={mainControls}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="w-[40vw] "
+          className="w-[50vw] sm:w-[40vw] "
           height="500"
           width="500"
           src="/layers/money.png"
         />
         <div className="flex flex-col ml-[10%]">
           <Reveal delay={0.4}>
-            <h1 className="text-6xl mt-5 font-bold uppercase">
+            <h1 className="text-4xl md:text-6xl mt-5 font-bold uppercase">
               Where buy $CHOG?
             </h1>
           </Reveal>
@@ -57,18 +57,22 @@ export const WhereToBuy = () => {
                 width: "30%",
               },
             }}
-            className="h-[5px] bg-purple-light mt-5 rounded-full"
+            className="h-[5px] max-w-[70px] md:max-w-auto bg-purple-light mt-5 rounded-full"
           />
           <Reveal delay={0.8}>
             {howToBuy.map((item, i) => (
               <div key={i} className="flex flex-col mt-5 mb-5">
                 <div className="flex items-center mb-1">
                   <div className="h-[15px] w-[15px] bg-purple-light rounded rotate-45 mr-3" />
-                  <h2 className="text-3xl uppercase">{item.title}</h2>
+                  <h2 className="text-xl md:text-3xl uppercase">
+                    {item.title}
+                  </h2>
                 </div>
-                <p className="text-xl mb-1.5 max-w-[90%]">{item.description}</p>
+                <p className="text-base md:text-xl mb-1.5 max-w-[90%]">
+                  {item.description}
+                </p>
                 <a
-                  className="text-xl italic text-purple-light underline"
+                  className="text-lg md:text-xl italic text-purple-light underline"
                   href={item.link}
                   target="_blank"
                 >
