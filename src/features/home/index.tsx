@@ -114,7 +114,7 @@ export const Home = () => {
                 style={{
                   position: "absolute",
                   top: "0px",
-                  background: "#FF0000",
+                  // background: "#FF0000",
                 }}
               />
             </Link>
@@ -139,7 +139,7 @@ export const Home = () => {
                   position: "absolute",
                   top: "0px",
                   right: "10px",
-                  background: "#FF00FF",
+                  // background: "#FF00FF",
                 }}
               />
             </Link>
