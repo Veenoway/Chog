@@ -126,7 +126,7 @@ export const Home = () => {
                 <h3 className="text-2xl lg:text-3xl mb-2.5 lg:mb-5 uppercase text-white">
                   {roadmap.title}
                 </h3>
-                <ul className="text-white sm:text-sm lg:text-lg z-10" ref={ref}>
+                <ul className="text-white sm:text-sm lg:text-lg z-10">
                   {roadmap.content.map((content, i) => (
                     <Li key={i} title={content} />
                   ))}
