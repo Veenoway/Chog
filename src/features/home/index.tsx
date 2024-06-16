@@ -46,7 +46,7 @@ export const Home = () => {
             </Slide>
             <Slide config={{ delay: 0.3 }}>
               <h1 className="text-5xl md:text-6xl lg:text-8xl mt-2.5 lg:mt-5 font-bold text-center md:text-start hidden md:flex text-cream">
-                CHOG COIN
+                CHOG ON BASE
               </h1>
             </Slide>
             <Slide config={{ delay: 0.4 }}>
