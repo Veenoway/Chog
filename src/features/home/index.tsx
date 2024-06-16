@@ -58,13 +58,15 @@ export const Home = () => {
   return (
     <main className="flex flex-col justify-center items-center">
       <section className="flex flex-col max-w-6xl w-[95%] py-[50px] mx-auto">
-        <img
-          className="w-[300px] md:w-[400px] mx-auto mb-[20px] sm:mb-[80px]"
-          height="500"
-          width="500"
-          src="/layers/title.PNG"
-          alt="Chog title"
-        />
+        <div className="flex w-full justify-center">
+          <img
+            className="w-[300px] md:w-[400px] mb-[20px] sm:mb-[80px] -ml-2 lg:-ml-[35px]"
+            height="500"
+            width="500"
+            src="/layers/title.PNG"
+            alt="Chog title"
+          />{" "}
+        </div>
         <div className="flex md:flex-row flex-col justify-between items-center w-full relatif">
           <div className="flex flex-col max-w-[95%] sm:max-w-[60%]">
             <span className=" hidden md:inline-flex items-center h-[40px] lg:h-[50px] w-[180px] lg:w-[230px] bg-gradient-to-r from-purple-tint to-purple-dark">
@@ -122,75 +124,72 @@ export const Home = () => {
         <div className="flex w-full justify-center items-center max-w-6xl mx-auto relative">
           <div className="flex items-center justify-between max-w-6xl w-[90%] flex-col lg:flex-row my-5 ">
             <div className="flex relative lg:my-0 lg:mx-5 w-full">
-              <div className="flex lg:items-center sm:p-5 sm:pb-8 p-8 lg:pb-10 flex-col bg-purple-tint w-full lg:w-[400px] h-full lg:h-fit z-20 rounded relative overflow-hidden border-2 border-purple-light">
-                <h3 className="text-2xl lg:text-3xl mb-2.5 lg:mb-5 uppercase text-white">
-                  {roadmap.title}
-                </h3>
-                <ul className="text-white sm:text-sm lg:text-lg z-10">
-                  {roadmap.content.map((content, i) => (
-                    <Li key={i} title={content} />
-                  ))}
-                </ul>
-                {/* <div
+              <Reveal delay={0.5} width="100%">
+                <div className="flex lg:items-center sm:p-5 sm:pb-8 p-8 lg:pb-10 flex-col bg-purple-tint w-full lg:w-[400px] h-full lg:h-fit z-20 rounded relative overflow-hidden border-2 border-purple-light">
+                  <h3 className="text-2xl lg:text-3xl mb-2.5 lg:mb-5 uppercase text-white">
+                    {roadmap.title}
+                  </h3>
+                  <ul className="text-white sm:text-sm lg:text-lg z-10">
+                    {roadmap.content.map((content, i) => (
+                      <Li key={i} title={content} />
+                    ))}
+                  </ul>
+                  {/* <div
                   className={`absolute z-0 ${
                     activeHover
                       ? "sm:-top-1 sm:-right-1 lg:-top-1.5 lg:-right-1.5"
                       : "sm:-top-2 sm:-right-2 -top-3 -right-2"
                   } rounded w-full lg:w-[300px] h-full lg:h-[420px] bg-purple-light transition-all duration-300 ease-in-out`}
                 /> */}
-                <motion.button
-                  initial="visible"
-                  transition={{ duration: 0.5, delay: 1 }}
-                  variants={{
-                    hidden: {
-                      opacity: 0,
-                      y: 10,
-                    },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                    },
-                  }}
-                  onClick={() => {
-                    if (activeRoadmapIndex === roadmaps.length - 1)
-                      setActiveRoadmapIndex(0);
-                    else setActiveRoadmapIndex(activeRoadmapIndex + 1);
-                  }}
-                  className="mt-6 mb-0 lg:mb-3 lg:mt-5 sm:text-base lg:text-lg text-white flex justify-center items-center bg-purple-light py-2 px-5 pl-2.5 border-purple-lighter border-2 rounded-full w-fit"
-                >
-                  <GrFormNextLink className="mr-1.5 text-2xl" />
-                  Phase{" "}
-                  {activeRoadmapIndex + 2 < 4 ? activeRoadmapIndex + 2 : 1}
-                </motion.button>
-                <motion.img
-                  // variants={{
-                  //   hidden: { opacity: 0, x: 50 },
-                  //   visible: { opacity: 1, x: 0 },
-                  // }}
-                  // initial="hidden"
-                  // animate={mainControls}
-                  // transition={{ duration: 0.5, delay: 0.8 }}
-                  className="flex lg:hidden sm:opacity-100 opacity-40 h-[300px] pointer-events-none absolute right-0 -bottom-4"
-                  height="500"
-                  width="500"
-                  src="/layers/top1.png"
-                />
-              </div>
+                  <motion.button
+                    initial="visible"
+                    transition={{ duration: 0.5, delay: 1 }}
+                    variants={{
+                      hidden: {
+                        opacity: 0,
+                        y: 10,
+                      },
+                      visible: {
+                        opacity: 1,
+                        y: 0,
+                      },
+                    }}
+                    onClick={() => {
+                      if (activeRoadmapIndex === roadmaps.length - 1)
+                        setActiveRoadmapIndex(0);
+                      else setActiveRoadmapIndex(activeRoadmapIndex + 1);
+                    }}
+                    className="mt-6 mb-0 lg:mb-3 lg:mt-5 sm:text-base lg:text-lg text-white flex justify-center items-center bg-purple-light py-2 px-5 pl-2.5 border-purple-lighter border-2 rounded-full w-fit"
+                  >
+                    <GrFormNextLink className="mr-1.5 text-2xl" />
+                    Phase{" "}
+                    {activeRoadmapIndex + 2 < 4 ? activeRoadmapIndex + 2 : 1}
+                  </motion.button>
+                  <motion.img
+                    // variants={{
+                    //   hidden: { opacity: 0, x: 50 },
+                    //   visible: { opacity: 1, x: 0 },
+                    // }}
+                    // initial="hidden"
+                    // animate={mainControls}
+                    // transition={{ duration: 0.5, delay: 0.8 }}
+                    className="flex lg:hidden sm:opacity-100 opacity-40 h-[300px] pointer-events-none absolute right-0 -bottom-4"
+                    height="500"
+                    width="500"
+                    src="/layers/top1.png"
+                  />
+                </div>{" "}
+              </Reveal>
             </div>
             <motion.img
-              className="hidden lg:flex h-[600px] pointer-events-none absolute -top-1/3"
-              // variants={
-              //   {
-              //     // hidden: { opacity: 0, y: 50, x: 0 },
-              //     // visible: { opacity: 1, y: "-33%", x: 0 },
-              //   }
-              // }
-              // initial="hidden"
-              // animate={mainControls}
-              // transition={{ duration: 0.5, delay: 0.8 }}
-
-              // height="500"
-              // width="500"
+              variants={{
+                hidden: { opacity: 0 },
+                visible: { opacity: 1 },
+              }}
+              initial="visible"
+              animate={mainControls}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              className="hidden lg:flex h-[600px] w-full pointer-events-none absolute -top-1/3"
               src="/layers/top1.png"
             />
           </div>
