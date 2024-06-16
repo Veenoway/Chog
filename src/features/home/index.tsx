@@ -46,19 +46,21 @@ export const Home = () => {
             </Slide>
             <Slide config={{ delay: 0.3 }}>
               <h1 className="text-5xl md:text-6xl lg:text-8xl mt-2.5 lg:mt-5 font-bold text-center md:text-start hidden md:flex text-cream">
-                CHOG COIN
+                CHOG ON BASE
               </h1>
             </Slide>
             <Slide config={{ delay: 0.4 }}>
               <h2 className="mt-2.5 lg:mt-5 text-4xl md:text-3xl lg:text-5xl uppercase font-normal text-center md:text-start">
-                The Moyaki's killer
+                The jeet killer
               </h2>
             </Slide>
             <Slide config={{ delay: 0.5 }}>
               <p className="mt-2.5 hidden md:flex lg:mt-5 sm:text-base lg:text-xl max-w-[80%] text-center sm:text-start mx-auto sm:mx-0">
-                Chog is a community-driven, fair launched DeFi Token. It's time
-                to take back control and redefine roles. The community is taking
-                matters into their own hands.
+                Chog is a meme who emerged from Monad Network, after months of
+                observing retail trying to get out of the rat race with
+                grandma's Christmas check, he is coming on Base to blow
+                everything up. Leave cats and dogs for jeets, and ape in $CHOG
+                for them gucci sandals.
               </p>
             </Slide>
             <Slide config={{ delay: 0.6 }}>
