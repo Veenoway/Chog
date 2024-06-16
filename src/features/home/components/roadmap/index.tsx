@@ -8,7 +8,7 @@ import { roadmaps } from "../../constants";
 export const Roadmap = () => {
   const [activeRoadmapIndex, setActiveRoadmapIndex] = useState(0);
   const roadmap = roadmaps[activeRoadmapIndex];
-  const ref = useRef<HTMLImageElement>(null);
+  const ref = useRef<HTMLHeadingElement>(null);
   const mainControls = useAnimation();
   const isInView = useInView(ref, { once: true });
 
