@@ -8,6 +8,7 @@ export const About = () => {
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
   const [isCopied, setIsCopied] = useState(false);
+  const [isHover, setIsHover] = useState(false);
 
   async function copyToClipboard() {
     try {
@@ -27,7 +28,7 @@ export const About = () => {
     }
   }, [isInView]);
   return (
-    <section className="mb-[100px]  md:mb-[200px] flex items-center flex-col w-[95%]">
+    <section className="mb-[100px] md:mt-[100px] mt-0 md:mb-[200px] flex items-center flex-col w-[95%]">
       <motion.div
         ref={ref}
         className="relative w-fit max-w-[700px]"
@@ -73,30 +74,43 @@ export const About = () => {
               control and redefine roles. Launched on Base for your cheap
               wallets & stablecoin liquidity to be ETH wreck-proof.
             </p>
-            <motion.button
-              initial="hidden"
-              animate={mainControls}
-              transition={{ duration: 0.5, delay: 1 }}
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: 10,
-                },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              onClick={copyToClipboard}
-              className="mt-6 mb-0 lg:mb-3 lg:mt-10 sm:text-base lg:text-lg text-white flex justify-center items-center bg-purple-light py-2 px-5 border-purple-lighter border-2 rounded-full w-fit"
-            >
-              {isCopied ? (
-                <FaCheck className="text-green-400 mr-2.5" />
-              ) : (
-                <FaRegCopy className=" mr-2.5" />
-              )}
-              0x0000000000000000000000000000000000000000
-            </motion.button>
+            <div className="relative w-fit h-fit">
+              <div
+                className={`${
+                  isHover ? "opacity-100 scale-100" : "opacity-0 scale-95"
+                } transition-all -top-[20px] md:-top-[10px] duration-300 ease-in-out absolute pointer-events-none  py-1 left-1/2 shadow-2xl -translate-x-1/2 px-2.5 bg-purple-light border-2 border-purple-lighter rounded-lg`}
+              >
+                <h5 className="text-[13px] sm:text-sm md:text-base">
+                  0x000000000000000000000000000000000
+                </h5>
+              </div>
+              <motion.button
+                onMouseEnter={() => setIsHover(true)}
+                onMouseLeave={() => setIsHover(false)}
+                initial="hidden"
+                animate={mainControls}
+                transition={{ duration: 0.5, delay: 1 }}
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    y: 10,
+                  },
+                  visible: {
+                    opacity: 1,
+                    y: 0,
+                  },
+                }}
+                onClick={copyToClipboard}
+                className="mt-6 mb-0 lg:mb-3 lg:mt-10 sm:text-base lg:text-lg text-white flex justify-center items-center bg-purple-light py-2 px-5 border-purple-lighter border-2 rounded-full w-fit"
+              >
+                {isCopied ? (
+                  <FaCheck className="text-green-400 mr-2.5" />
+                ) : (
+                  <FaRegCopy className=" mr-2.5" />
+                )}
+                0x0000...000000
+              </motion.button>
+            </div>
           </motion.div>
         </div>
 
