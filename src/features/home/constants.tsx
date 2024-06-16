@@ -20,6 +20,7 @@ export const roadmaps = [
       "Community Airdrop to most active members",
       "Website Launch",
       "Token Launch",
+      "First marketing campaign",
       "Reaching 300 holders",
       "Reaching 100k market-cap",
     ],
