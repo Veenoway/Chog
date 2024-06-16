@@ -20,7 +20,7 @@ export const Home = () => {
         />
         <div className="flex sm:flex-row flex-col justify-between items-center w-full relatif">
           <div className="flex flex-col max-w-[95%] sm:max-w-[60%]">
-            <span className=" hidden sm:inline-flex items-center h-[40px] lg:h-[50px] w-[180px] mx-auto lg:w-[230px] bg-gradient-to-r from-purple-tint to-purple-dark">
+            <span className=" hidden sm:inline-flex items-center h-[40px] lg:h-[50px] w-[180px] lg:w-[230px] bg-gradient-to-r from-purple-tint to-purple-dark">
               <h3 className="ml-3 text-xl lg:text-3xl text-nowrap uppercase text-purple-light">
                 About $CHOG
               </h3>
