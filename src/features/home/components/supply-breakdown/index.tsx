@@ -21,10 +21,10 @@ export const SupplyBreakdown = () => {
       </div>
       <div className="flex w-full bg-purple-tint">
         <div className="flex w-full justify-center">
-          <div className="flex  justify-between items-center max-w-5xl w-full p-7 lg:p-[40px]">
+          <div className="flex  justify-between items-center relative max-w-5xl w-full p-7 lg:p-[40px]">
             <div className="flex flex-col mr-[5%]">
               <Reveal delay={0.4}>
-                <h1 className="text-xl sm:text-3xl lg:text-5xl font-bold uppercase">
+                <h1 className="text-xl sm:text-3xl lg:text-5xl font-bold uppercase text-cream">
                   Supply Breakdown
                 </h1>
               </Reveal>
@@ -54,7 +54,7 @@ export const SupplyBreakdown = () => {
                   <div key={i} className="flex flex-col mt-2 lg:mt-4">
                     <div className="flex items-center mb-1">
                       <div
-                        className={`h-[12px] w-[12px] lg:h-[15px] lg:w-[15px] ${item.bg} rounded rotate-45 mr-3`}
+                        className={`h-[12px] w-[12px] ml-0.5 lg:h-[15px] lg:w-[15px] ${item.bg} rounded rotate-45 mr-3 border-2 border-purple-light`}
                       />
                       <h2 className="text-base lg:text-xl uppercase">
                         {item.title}
@@ -72,10 +72,10 @@ export const SupplyBreakdown = () => {
               initial="hidden"
               animate={mainControls}
               transition={{ duration: 0.5, delay: 0.8 }}
-              className="h-[200px] sm:h-[260px] lg:h-[320px] w-[200px] sm:w-[260px] lg:w-[320px]"
+              className="h-[200px] sm:h-[260px] lg:h-[480px] w-[200px] sm:w-[260px] lg:w-[540px] absolute right-0 -bottom-[70px]"
               height="500"
               width="500"
-              src="/layers/graphic-3.png"
+              src="/layers/tokenomic-2.png"
             />
           </div>
         </div>

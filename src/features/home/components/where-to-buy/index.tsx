@@ -23,7 +23,7 @@ export const WhereToBuy = () => {
   ];
 
   return (
-    <section className="flex justify-center flex-col items-center w-[95%] max-w-6xl pb-[100px] md:pb-[200px]">
+    <section className="flex justify-center flex-col items-center w-[95%] max-w-6xl mb-[100px] md:mb-[200px]">
       <div className="w-full flex md:flex-row flex-col justify-between items-center">
         <motion.img
           variants={{
@@ -40,7 +40,7 @@ export const WhereToBuy = () => {
         />
         <div className="flex flex-col ml-[10%]">
           <Reveal delay={0.4}>
-            <h1 className="text-4xl md:text-6xl mt-5 font-bold uppercase">
+            <h1 className="text-4xl md:text-6xl mt-5 font-bold uppercase text-cream">
               Where buy $CHOG?
             </h1>
           </Reveal>

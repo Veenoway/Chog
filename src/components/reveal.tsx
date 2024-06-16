@@ -6,6 +6,8 @@ interface RevealProps {
   width?: string;
   className?: string;
   delay?: number;
+  from?: number;
+  to?: number;
 }
 
 export const Reveal = ({
@@ -13,6 +15,8 @@ export const Reveal = ({
   width = "fit-content",
   className,
   delay = 0.25,
+  from = 70,
+  to = 0,
 }: RevealProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: false });
@@ -33,11 +37,11 @@ export const Reveal = ({
         variants={{
           hidden: {
             opacity: 0,
-            y: 70,
+            y: from,
           },
           visible: {
             opacity: 1,
-            y: 0,
+            y: to,
           },
         }}
         initial="hidden"
