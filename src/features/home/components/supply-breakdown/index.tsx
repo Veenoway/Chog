@@ -75,7 +75,7 @@ export const SupplyBreakdown = () => {
               className="h-[200px] sm:h-[260px] lg:h-[320px] w-[200px] sm:w-[260px] lg:w-[320px]"
               height="500"
               width="500"
-              src="/layers/tokenomic.png"
+              src="/layers/graphic-3.png"
             />
           </div>
         </div>
