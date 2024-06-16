@@ -70,10 +70,8 @@ export const About = () => {
               Chog emerged in the Monad Discord, created by one of the original
               members, RayJ. The stories surrounding Chog will be explored in X
               spaces, marking a turning point for Chog. It's time to take back
-              control and redefine roles. The community is taking matters into
-              their own hands. Post-launch, contract access will be renounced.
-              Stablecoin liquidity to be ETH wreck-proof. The long anticipation
-              is coming to an end, and a new era of community leadership begins.
+              control and redefine roles. Launched on Base for your cheap
+              wallets & stablecoin liquidity to be ETH wreck-proof.
             </p>
             <motion.button
               initial="hidden"
@@ -97,7 +95,7 @@ export const About = () => {
               ) : (
                 <FaRegCopy className=" mr-2.5" />
               )}
-              TBA
+              0x0000000000000000000000000000000000000000
             </motion.button>
           </motion.div>
         </div>
