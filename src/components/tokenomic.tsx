@@ -21,7 +21,7 @@ export const Tokenomic = ({
   return (
     <div className="flex flex-col items-center mx-2.5 md:mx-5 ">
       {/* <Reveal delay={config[0]}> */}
-      <Button title={title} />
+      <Button title={title} className="cursor-default" />
       {/* </Reveal> */}
       <motion.h4
         // variants={{
