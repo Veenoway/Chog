@@ -72,12 +72,11 @@ export const WhereToBuy = () => {
                   {item.description}
                 </p>
                 <a
-                  className="text-lg opacity-60 md:text-xl italic text-purple-light underline"
+                  className="text-lg md:text-xl italic text-purple-light underline"
                   href={item.link}
                   target="_blank"
                 >
-                  {/* Buy on {item.title} */}
-                  Launching soon
+                  Buy on {item.title}
                 </a>
               </div>
             ))}

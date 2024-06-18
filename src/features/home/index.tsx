@@ -65,8 +65,16 @@ export const Home = () => {
               </p>
             </Slide>
             <Slide config={{ delay: 0.6 }}>
-              <button className="flex mb-10 md:mb-0 mt-5 lg:mt-8 cursor-not-allowed opacity-60 justify-center items-center bg-purple-light py-1.5 md:py-2 px-3 md:px-5 border-purple-lighter border-2 rounded-full w-fit  mx-auto md:mx-0">
-                <h4 className="sm:text-base lg:text-xl text-white">Buy now!</h4>
+              <button className="flex mb-10 md:mb-0 mt-5 lg:mt-8 justify-center items-center bg-purple-light py-1.5 md:py-2 px-3 md:px-5 border-purple-lighter border-2 rounded-full w-fit  mx-auto md:mx-0">
+                <a
+                  href="https://app.uniswap.org/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <h4 className="sm:text-base lg:text-xl text-white">
+                    Buy now!
+                  </h4>
+                </a>
               </button>
             </Slide>
           </motion.div>

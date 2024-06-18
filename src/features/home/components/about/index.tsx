@@ -13,7 +13,7 @@ export const About = () => {
   async function copyToClipboard() {
     try {
       await navigator.clipboard.writeText(
-        "0x0000000000000000000000000000000000000000"
+        "0xC1D2217490495a5BA8ab82F9151e6C51e328D0d8"
       );
       setIsCopied(true);
       setTimeout(() => {
@@ -83,7 +83,7 @@ export const About = () => {
                 } transition-all -top-[20px] lg:-top-[10px] duration-300 ease-in-out absolute pointer-events-none  py-1 left-1/2 shadow-2xl -translate-x-1/2 px-2.5 bg-purple-light border-2 border-purple-lighter rounded-lg`}
               >
                 <h5 className="text-[12px] sm:text-sm md:text-base">
-                  0x0000000000000000000000000000000000000000
+                  0xC1D2217490495a5BA8ab82F9151e6C51e328D0d8
                 </h5>
               </div>
               <motion.button
@@ -110,7 +110,7 @@ export const About = () => {
                 ) : (
                   <FaRegCopy className=" mr-2.5" />
                 )}
-                0x0000...000000
+                0xC1D2...28D0d8
               </motion.button>
             </div>
           </motion.div>
