@@ -19,9 +19,9 @@ export const roadmaps = [
   {
     title: "Phase 1",
     content: [
-      "Community Airdrop to most active members",
       "Website Launch",
       "Token Launch",
+      "Community Airdrop to most active members",
       "First marketing campaign",
       "Reaching 300 holders",
       "Reaching 100k market-cap",
@@ -33,17 +33,19 @@ export const roadmaps = [
       "Reaching 1M volume",
       "Second marketing campaign",
       "Reaching 500 holders",
-      "Reaching 500k market-cap",
+      "Reaching 250k market-cap",
       "Reaching 100M volume",
+      "Reaching 500k market-cap",
     ],
   },
   {
     title: "Phase 3",
     content: [
       "CEX Listing",
+      "Reaching 1M market-cap",
       "Third marketing campaign ",
       "Reaching 5000 holders",
-      "Reaching 100M market cap",
+      "Reaching 10M market-cap",
       "Gucci Sandals",
     ],
   },
